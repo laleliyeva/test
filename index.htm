@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .full {
+      grid-column: span 2;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    @media(max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .full {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <p>Cybersecurity | Developer</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I am a Computer Science student focused on cybersecurity and development.</p>
+  </div>
+
+  <div class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>TikTok Scraper</li>
+      <li>Firewall Audit Automation</li>
+      <li>Penetration Testing Labs</li>
+    </ul>
+  </div>
+
+  <div class="card full">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
